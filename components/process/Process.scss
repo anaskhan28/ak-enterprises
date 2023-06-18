@@ -1,3 +1,13 @@
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    // 768px
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+}
+
 .processes{
     display: flex;
     flex-direction: column;
@@ -5,6 +15,10 @@
     width: 185px;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint(md){
+      gap: 0.5rem;
+    }
 
     .background{
     width: 75px; 

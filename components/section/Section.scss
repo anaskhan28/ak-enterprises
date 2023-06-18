@@ -1,82 +1,143 @@
-.interested-section{
-    background-color: rgba(94, 128, 255, 1);
-    width: 100%;
-
-
-    .cloud{
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-
-        .heading{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #ffff;
-            gap: 1rem;
-            margin-right: -4rem ;
-
-            .title{
-                font-size: 0.7rem;
-                text-transform: uppercase;
-                font-weight: bold;
-                word-spacing: 0.2rem;
-                letter-spacing: 1px;
-
-            }
-            .about-title{
-                font-size: 2.8rem;
-                font-weight: lighter;
-            }
-
-            .about-desc{
-                font-weight: lighter;
-                word-spacing: 0.2rem;
-                text-align: center;
-                line-height: 1.5rem;
-                
-
-            }
-
-            .btn{
-                margin-top: 1rem;
-                display: flex;
-          
-                .service-btn{
-                  background-color: #ffff;
-                  color: #3A79FF;
-                  border-radius: 0;
-                  margin-top: 1rem;
-                  padding: 0.7rem 2rem;
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 text-align: center;
-                  border: none;
-                  cursor: pointer;
-          
-                }
-                .connect-btn{
-                  background: transparent;
-                  color: #B4BBD4;
-                  border: 2px solid #ADB4D2;
-                  box-shadow: 1rem;
-                  border-radius: 0;
-                  margin-top: 1rem;
-                  padding: 0.7rem 2rem;
-                  
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 text-align: center;
-                  border: 1px solid #ffff;
-                  cursor: pointer;
-          
-                }
-              }
-        }
+@mixin breakpoint($point) {
+  @if $point == md {
+    // 768px
+    @media (max-width: 48em) {
+      @content;
     }
-   
+  }
+}
 
+.interested-section {
+  background-color: rgba(94, 128, 255, 1);
+  width: 100%;
+
+  .cloud {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .cloud1 {
+      @include breakpoint(md) {
+        max-width: 150px;
+        width: 100%;
+        max-height: 150px;
+        height: 100%;
+        display: none;
+      }
+    }
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffff;
+      gap: 1rem;
+      margin-right: -4rem;
+
+      @include breakpoint(md) {
+        gap: 0.5rem;
+        /* margin-left: 4rem; */
+        max-width: 350px;
+        /* padding: 0rem 0rem 0rem 1rem; */
+        justify-content: center;
+        margin-left: 1.5rem;
+      }
+
+      .title {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        word-spacing: 0.2rem;
+        letter-spacing: 1px;
+
+
+        @include breakpoint(md){
+            font-size: 0.5rem;
+    margin-top: 1rem;
+    word-spacing: 0rem;
+        }
+      }
+      .about-title {
+        font-size: 2.8rem;
+        font-weight: lighter;
+
+        @include breakpoint(md){
+            font-size: 1.5rem;
+        }
+      }
+
+      .about-desc {
+        font-weight: lighter;
+        word-spacing: 0.2rem;
+        text-align: center;
+        line-height: 1.5rem;
+
+        @include breakpoint(md){
+            font-size: 0.7rem;
+            line-height: 1rem;
+            /* text-align: start; */
+            word-spacing: 0rem;
+        }
+      }
+
+      .btn {
+        margin-top: 1rem;
+        display: flex;
+
+        @include breakpoint(md){
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-btn {
+          background-color: #ffff;
+          color: #3a79ff;
+          border-radius: 0;
+          margin-top: 1rem;
+          padding: 0.7rem 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          border: none;
+          cursor: pointer;
+
+          @include breakpoint(md){
+            padding: 0rem 1rem;
+          }
+        }
+        .connect-btn {
+          background: transparent;
+          color: #b4bbd4;
+          border: 2px solid #adb4d2;
+          box-shadow: 1rem;
+          border-radius: 0;
+          margin-top: 1rem;
+          padding: 0.7rem 2rem;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          border: 1px solid #ffff;
+          cursor: pointer;
+
+          @include breakpoint(md){
+            padding: 0.4rem 1rem;
+          }
+        }
+      }
+    }
+
+    .cloud2 {
+      @include breakpoint(md) {
+        max-width: 150px;
+        width: 100%;
+        max-height: 150px;
+        height: 100%;
+        display: none;
+      }
+    }
+  }
 }

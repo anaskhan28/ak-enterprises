@@ -1,3 +1,13 @@
+@mixin breakpoint($point) {
+    @if $point == md {
+      // 768px
+      @media (max-width: 48em) {
+        @content;
+      }
+    }
+  }
+  
+
 .footer{
     width: 100%;
     background-color: #ffff;
@@ -15,21 +25,62 @@
             height: auto;
         }
 
-        .links ul{
+        .links {
             display: flex;
             gap: 2rem;
+            flex-direction: row;
 
-            li {
-                list-style: none;
-                color: #ADB4D2;
-                font-size: 0.9rem;
-                cursor: pointer;
+            @include breakpoint(md){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1rem;
+                justify-items: center;
+                margin-top: 0rem;
             }
-             li:hover{
-                color: #567AFF;
-                transition: 0.4s ease;
-             }
+          }
+          
+          .group {
+            display: flex;
+            justify-content: center;
+
+            @include breakpoint(md){
+                display: flex;
+                justify-content: center;
+            }
+          }
+          
+          .group ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+
+            @include breakpoint(md){
+                display: flex;
+            flex-direction: column;
+            gap: 0rem;
+
+            }
+          }
+          
+          .group li {
+            margin-bottom: 0.5rem;
+          }
+
+          li {
+            list-style: none;
+            color: #ADB4D2;
+            font-size: 0.9rem;
+            cursor: pointer;
         }
+
+          li:hover{
+            color: #567AFF;
+            transition: 0.4s ease;
+         }
+          
     }
     
 .line{
