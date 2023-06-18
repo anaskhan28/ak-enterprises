@@ -1,4 +1,3 @@
-'use client'
 import Head from 'next/head';
 import './globals.scss';
 import { Open_Sans } from 'next/font/google';
@@ -17,19 +16,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-
-    <style jsx global>{`
-            html {
-              font-family: ${OpenSans.style.fontFamily};
-            }
-          `}</style>
-   
+      <style jsx global>{`
+        html {
+          font-family: ${OpenSans.style.fontFamily};
+        }
+      `}</style>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <link rel='icon' href='./favicon.ico'/>
+      </Head>
       <html lang="en">
         <body className={OpenSans.className}>
           <Nav/>
           {children}
           <Footer/>
-          </body>
+        </body>
       </html>
     </>
   );
