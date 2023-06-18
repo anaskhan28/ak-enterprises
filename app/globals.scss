@@ -1,0 +1,37 @@
+:root{
+
+    // colors
+
+    $primary-color: #3A79FF;
+    $secondary-color: #4C85FF;
+    $light-blue: #D2E1FF;
+    $dark-blue: #3D4F9F;
+    $ligth-red: #FFD7D7;
+    $ligth-grey: #ADB4D2;
+    $red: #D43F;
+    $dark-grey: #565F82;
+
+    // font style
+
+   $text-xs: 1.4rem;
+  $text-sm: 1.6rem;
+  $text-md: 2rem;
+  $text-lg: 2.6rem;
+  $text-xl: 3rem;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-size: var(--text-sm);
+  }

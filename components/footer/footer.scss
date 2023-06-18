@@ -1,0 +1,54 @@
+.footer{
+    width: 100%;
+    background-color: #ffff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1rem;
+
+        .logo{
+            width: 4rem;
+            height: auto;
+        }
+
+        .links ul{
+            display: flex;
+            gap: 2rem;
+
+            li {
+                list-style: none;
+                color: #ADB4D2;
+                font-size: 0.9rem;
+                cursor: pointer;
+            }
+             li:hover{
+                color: #567AFF;
+                transition: 0.4s ease;
+             }
+        }
+    }
+    
+.line{
+    border: 0.2px solid white;
+    box-shadow: 5px 10px rgb(209, 209, 209);
+    width: 100%;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: #ADB4D2;
+    cursor: pointer;
+}
+.right:hover{
+    color: #567AFF;
+    transition: 0.4s ease;
+}
+    
+
+}

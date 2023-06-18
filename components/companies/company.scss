@@ -1,0 +1,41 @@
+@mixin breakpoint($point) {
+    @if $point == md {
+      // 768px
+      @media (max-width: 48em) {
+        @content;
+      }
+    }
+  }
+  
+  .com-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    
+    @include breakpoint(md) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // Two images per column
+      grid-gap: 1rem;
+    
+    }
+    .images {
+      display: flex;
+      filter: grayscale(100%);
+      background: transparent;
+      transition: filter 0.3s ease;
+
+      @include breakpoint(md) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // Two images per column
+        grid-gap: 1rem;
+      
+      }
+    }
+  
+    .images:hover {
+      filter: none;
+      cursor: pointer;
+    }
+  }
+  

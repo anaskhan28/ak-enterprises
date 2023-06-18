@@ -1,0 +1,48 @@
+.processes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 185px;
+    justify-content: center;
+    align-items: center;
+
+    .background{
+    width: 75px; 
+  height: 75px;
+  border-radius: 50%; 
+  overflow: hidden; 
+  padding: 20px;
+  padding-right: 15px; 
+  background-color: #F1F5FF; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img{
+    max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  
+  }
+    }
+
+    .title{
+        font-size: large;
+        font-weight: bold;
+        color: #3D4F9F;
+    }
+
+    .line3{
+        width: 30px;
+        border: 1px solid #DAE4FE;
+        margin-right: -18rem;
+    }
+    .title-about{
+        color: #ADB3CB;
+        max-width: 100%;
+        word-spacing: 2px;
+        text-align: center;
+        
+    }
+
+}
