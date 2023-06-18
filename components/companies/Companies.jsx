@@ -6,7 +6,7 @@ import { Slide } from '../slide/slide';
 
 
 const getNumSlides = () => {
-  return typeof window !== 'undefined' && window.innerWidth < 768 ? 3 : 6;
+  return typeof window !== 'undefined' && window.innerWidth < 768 ? 3 : 3;
 };
 
 const Companies = () => {
