@@ -19,7 +19,9 @@ function Navbar() {
         height: window.innerHeight,
       });
     };
-    window.addEventListener("resize", handleResize);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+    }
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);

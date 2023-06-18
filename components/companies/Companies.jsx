@@ -5,9 +5,9 @@ import Company from './company';
 import { Slide } from '../slide/slide';
 
 
-const getNumSlides = () =>{
-    return window.innerWidth < 768 ? 3 : 6;
-  }
+const getNumSlides = () => {
+  return typeof window !== 'undefined' && window.innerWidth < 768 ? 2 : 6;
+};
 
 const Companies = () => {
     
@@ -17,8 +17,11 @@ const Companies = () => {
         const handleResize = () => {
           setNumSlides(getNumSlides());
         };
-    
-        window.addEventListener('resize', handleResize);
+
+
+        if (typeof window !== 'undefined') {
+          window.addEventListener('resize', handleResize);
+        }
     
         return () => window.removeEventListener('resize', handleResize);
       }, [numSlides]);
