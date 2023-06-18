@@ -1,4 +1,4 @@
-'use client'
+
 import Head from 'next/head';
 import './globals.scss';
 import { Open_Sans } from 'next/font/google';
