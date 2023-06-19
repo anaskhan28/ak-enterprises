@@ -13,6 +13,16 @@ import Truck from '../public/images/truck.png';
 import Cloud1 from '../public/images/blue-cloud.png';
 import Cloud2 from '../public/images/blue-cloud1.png';
 
+import Ac from '../public/images/work/ac.png';
+import Bank from '../public/images/work/bank.png';
+import Computer from '../public/images/work/computer.png';
+import Demolish from '../public/images/work/demolish.png';
+import Furniture from '../public/images/work/furniture.png';
+import Lockers from '../public/images/work/lockers.png';
+import Machines from '../public/images/work/machines.png';
+import Metals from '../public/images/work/metals.png';
+import Shifting from '../public/images/work/shifting.png';
+
 
 export const CompaniesImages = [
     BOI,
@@ -34,5 +44,18 @@ Truck
 export const Clouds = {
     Cloud1,
     Cloud2
+
+}
+
+export const ServiceImages = {
+    Ac,
+    Bank,
+    Computer,
+    Demolish,
+    Furniture,
+    Lockers,
+    Machines,
+    Metals,
+    Shifting
 
 }
