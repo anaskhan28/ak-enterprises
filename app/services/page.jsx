@@ -1,7 +1,7 @@
 import React from 'react'
 import './services.scss';
-import Cards from '../../components/card/Cards.jsx'
-
+import Card from '@/components/card/Card';
+import Cards from '@/components/card/Cards';
 
 const services = () => {
   return (
