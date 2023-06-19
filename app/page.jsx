@@ -1,21 +1,17 @@
 import "./home.scss";
 import Image from "next/image";
 import Hero from "../public/images/hero.png";
-import Company from "@/components/companies/company";
 import Hero2 from "../public/images/hero2.png";
 import Work from "../public/images/meter.png";
 import Clients from "../public/images/user.png";
-import Process from "@/components/process/Process";
-import { Processing } from "@/utils/Images";
 import Cloud from "../public/images/cloud.png";
-import { MyComponent, Slide } from "@/components/slide/slide";
-import SlideCard from "@/components/slide-card/SlideCard";
-import ReviewCard from "@/components/review-card/ReviewCard";
 import Section from "@/components/section/Section";
 import { SlideCards } from "@/components/slide-cards/SlideCards";
 import ReviewCards from "@/components/review-cards/ReviewCards";
 import Processes from "@/components/processes/Processes";
 import Companies from "@/components/companies/Companies";
+
+
 export default function Home() {
   return (
     <>
