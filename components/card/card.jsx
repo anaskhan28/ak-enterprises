@@ -1,7 +1,8 @@
 import React from "react";
 import "./Card.scss";
 import Image from "next/image";
-import Furniture from '../../public/images/work/furniture.png'
+
+
 const Card = ({ image, title, subtitle, desc }) => {
   return (
     <div className="card-containter">
