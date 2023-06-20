@@ -69,8 +69,8 @@ function Navbar() {
             </li>
           
           </ul>
-          <Link href="/about">
-              <button className="btn btn__login">Know More</button>
+          <Link href="/contact">
+              <button className="btn btn__login">Contact Us</button>
             </Link>
         </nav>
         <div className="header__content__toggle">

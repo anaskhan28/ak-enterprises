@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.scss";
 import Image from "next/image";
-
+import Link from "next/link";
 
 const Card = ({ image, title, subtitle, desc }) => {
   return (
@@ -17,7 +17,9 @@ const Card = ({ image, title, subtitle, desc }) => {
       <div className="line"></div>
 
       <div className="card-btn">
-        <div className="call-us">Call Us</div>
+      <Link href="/contact">
+        <button className="call-us">Call Us</button>
+        </Link>
       </div>
     </div>
   );

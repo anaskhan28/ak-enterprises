@@ -50,12 +50,14 @@
     /* margin-top: -1rem; */
     margin-bottom: 1rem;
 
-    .call-us{
+    a .call-us{
         background: #D2E1FF;
         padding: 0.5rem 1rem;
         border-radius: 1rem;
         color: #3A79FF;
         margin-right: 13rem;
+        border: none;
+
     }
     }
   }
@@ -69,6 +71,7 @@
   .call-us:hover{
     background-color: #3A79FF;
     color: #ffff;
+    cursor: pointer;
    }
  
   }

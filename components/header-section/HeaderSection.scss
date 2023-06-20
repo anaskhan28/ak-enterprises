@@ -1,0 +1,28 @@
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f8ff;
+    padding: 1rem;
+    width: 100%;
+
+    .section-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+
+      .section-subtitle {
+        text-transform: uppercase;
+        color: #3d4f9f;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+      .section-about {
+        font-size: 2rem;
+        color: #3d4f9f;
+      }
+    }
+  }

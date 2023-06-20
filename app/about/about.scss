@@ -1,0 +1,30 @@
+
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .about-content{
+        display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    max-width: 1098px;
+    width: 100%;
+        p{
+            flex: 1 0 100%;
+            padding: 10px;
+            word-spacing: calc(1px + 0.1vw);
+            line-height: 1.7rem;
+            font-size: calc(0.7rem + 0.5vw); 
+            font-weight:300;
+
+        }
+    }
+}
