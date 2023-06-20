@@ -1,6 +1,7 @@
 import HeaderSection from '@/components/header-section/HeaderSection'
 import React from 'react'
 import './about.scss';
+import Section from '@/components/section/Section';
 
 const about = () => {
   return (
@@ -27,6 +28,14 @@ const about = () => {
          that we work in favour of client satisfaction.
         </p>
       </div>
+      <Section 
+      title='Like Our Work'
+       about='Contact Us' 
+       desc='Items include all types of metals like aluminium, copper, steel, brass and many more. We also deal 
+       with old furniture items which inlcude, office furnitures, tables, chairs,
+        home furnitures and many more.'
+        button1='Enquiry' 
+        button2='Our Services'/>
     </section>
   )
 }
