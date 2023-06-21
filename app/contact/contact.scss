@@ -1,12 +1,11 @@
 @mixin breakpoint($point) {
-    @if $point == md {
-      // 768px
-      @media (max-width: 48em) {
-        @content;
-      }
+  @if $point == md {
+    // 768px
+    @media (max-width: 48em) {
+      @content;
     }
   }
-  
+}
 
 .contact-container {
   display: flex;
@@ -40,11 +39,10 @@
       justify-content: center;
       gap: 2rem;
 
-      @include breakpoint(md){
+      @include breakpoint(md) {
         flex-direction: column;
-    max-width: 400px;
-    width: 100%;
-
+        max-width: 400px;
+        width: 100%;
       }
 
       .contact-form {
@@ -55,7 +53,7 @@
         width: 100%;
         margin-top: 3rem;
         h1 {
-          font-size: 0.8rem;
+          font-size: 1rem;
           margin-left: 1rem;
           font-weight: 400;
           color: #697ca6;
@@ -71,7 +69,15 @@
           textarea {
             padding: 0.8rem 2.2rem;
             border-radius: 4px;
-            border: 1px solid gray;
+            border: 2px dotted gray;
+            transition: border-color 0.3s;
+            resize: none;
+            outline: none;
+
+            &:focus {
+             
+              border-color: #407bff;
+            }
 
             &::placeholder {
               color: rgba(135, 135, 135, 1);
@@ -86,14 +92,19 @@
             max-height: 150px;
             width: 100%;
           }
-          button{
+          button {
             padding: 0.6rem 2rem;
             font-size: 1.2rem;
-            background-color: #407BFF;
+            background-color: #407bff;
             color: #ffff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+
+            &:hover {
+              background-color: #d2e1ff;
+              color: #407bff;
+            }
           }
         }
       }
@@ -107,24 +118,20 @@
         height: 100%;
         margin-bottom: 1.4rem;
 
-        @include breakpoint(md){
-            width: 100%;
-            padding: 0.4rem;
-            flex-direction: column;
+        @include breakpoint(md) {
+          width: 100%;
+          padding: 0.4rem;
+          flex-direction: column;
         }
 
         .contact {
           display: flex;
           flex-direction: row;
           gap: 1rem;
-          
-          p{
+          cursor: pointer;
+
+          p {
             flex-wrap: wrap;
-          }
-          @include breakpoint(md){
-            .maps{
-                width: 100%;
-            }
           }
         }
       }

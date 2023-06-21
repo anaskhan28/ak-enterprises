@@ -39,10 +39,10 @@ const contact = () => {
           </div>
           <div style={{marginTop: '1rem'}} className="contact">
           <Image className='img' src={Gmail}/>
-          <span>akenterprises.dealers@gmail.com</span>
+          <span><a href="mailto:akenterprises.dealers@gmail.com" style={{textDecoration: 'none', color: 'black'}}>akenterprises.dealers@gmail.com</a></span>
           </div>
           <iframe className='maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8739057493985!2d73.05822577545226!3d19.113186882099118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c048869bac53%3A0xf15fca7029829cee!2sNew%20Ekta%20Weigh%20Bridge!5e0!3m2!1sen!2sin!4v1687312897254!5m2!1sen!2sin" 
-          width="400" height="300" style={{border: 0, marginTop: '2rem'}}  allowfullscreen="" loading="lazy" 
+          width="400" height="300" style={{border: 0, marginTop: '2rem', width: '100%'}}  allowfullscreen="" loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
