@@ -6,6 +6,7 @@ import Hdfc from '../public/images/comapnies/HDFC.svg';
 import Saraswati from '../public/images/comapnies/saraswati.png';
 import Ubi from '../public/images/comapnies/ubi.png';
 import Wipro from '../public/images/comapnies/wipro.png'
+import Sbi from '../public/images/comapnies/Sbi.png'
 
 import Enquiry from '../public/images/enquiry.png';
 import User from '../public/images/user.png';
@@ -27,11 +28,12 @@ import Shifting from '../public/images/work/shifting.png';
 export const CompaniesImages = [
     BOI,
     Baroda,
+    Ubi,
     Canara,
     Central,
+    Sbi,
     Hdfc,
     Saraswati,
-    Ubi,
     Wipro,
 ]
 
