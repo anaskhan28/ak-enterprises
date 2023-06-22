@@ -69,14 +69,17 @@
           textarea {
             padding: 0.8rem 2.2rem;
             border-radius: 4px;
-            border: 2px dotted gray;
-            transition: border-color 0.3s;
             resize: none;
-            outline: none;
+            border: none;
+            outline-style: dashed;
+            outline-color: #e1e5ec;
+            outline-width: 1px;
 
             &:focus {
-             
-              border-color: #407bff;
+              border: none;
+              outline-style: dashed;
+              outline-color:hsla(242,88.4%,56.3%,1);
+              outline-width: 2px;
             }
 
             &::placeholder {
@@ -129,9 +132,19 @@
           flex-direction: row;
           gap: 1rem;
           cursor: pointer;
+          font-weight: lighter;
 
           p {
             flex-wrap: wrap;
+          }
+
+          a{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+              color: hsla(242,88.4%,56.3%,1);;
+            }
           }
         }
       }

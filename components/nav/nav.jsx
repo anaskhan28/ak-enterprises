@@ -34,7 +34,12 @@ function Navbar() {
 
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
+
   };
+  const linkClickHanlder = () =>{
+    setMenuOpen(false)
+  }
+ 
 
   return (
     <header className="header">
@@ -53,23 +58,23 @@ function Navbar() {
         >
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link onClick={linkClickHanlder} href="/">Home</Link>
             </li>
             <li>
-              <Link href="/services">Services</Link>
+              <Link onClick={linkClickHanlder}  href="/services">Services</Link>
             </li>
             <li>
-              <Link href="/">Clients</Link>
+              <Link  onClick={linkClickHanlder} href="/">Clients</Link>
             </li>
             <li>
-              <Link href="/">Process</Link>
+              <Link onClick={linkClickHanlder}  href="/">Process</Link>
             </li>
             <li>
-              <Link href="/about">About Us</Link>
+              <Link onClick={linkClickHanlder}  href="/about">About Us</Link>
             </li>
           
           </ul>
-          <Link href="/contact">
+          <Link onClick={linkClickHanlder}  href="/contact">
               <button className="btn btn__login">Contact Us</button>
             </Link>
         </nav>
