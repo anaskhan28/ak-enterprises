@@ -78,7 +78,7 @@
             &:focus {
               border: none;
               outline-style: dashed;
-              outline-color:hsla(242,88.4%,56.3%,1);
+              outline-color:#407bff;
               outline-width: 2px;
             }
 
@@ -140,11 +140,9 @@
 
           a{
             text-decoration: none;
-            color: black;
+            color: hsla(242,88.4%,56.3%,1);
 
-            &:hover{
-              color: hsla(242,88.4%,56.3%,1);;
-            }
+           
           }
         }
       }
