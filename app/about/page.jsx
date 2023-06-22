@@ -35,7 +35,10 @@ const about = () => {
        with old furniture items which inlcude, office furnitures, tables, chairs,
         home furnitures and many more.'
         button1='Enquiry' 
-        button2='Our Services'/>
+        button2='Our Services'
+        link1='contact'
+        link2='services'
+        />
     </section>
   )
 }

@@ -64,10 +64,16 @@ function Navbar() {
               <Link onClick={linkClickHanlder}  href="/services">Services</Link>
             </li>
             <li>
-              <Link  onClick={linkClickHanlder} href="/">Clients</Link>
+              <Link  onClick={linkClickHanlder} href="#clients">Clients</Link>
             </li>
             <li>
-              <Link onClick={linkClickHanlder}  href="/">Process</Link>
+              <Link onClick={linkClickHanlder}  href="#process">Process</Link>
+            </li>
+            <li>
+              <Link onClick={linkClickHanlder}  href="#work">Our Work</Link>
+            </li>
+            <li>
+              <Link onClick={linkClickHanlder}  href="#review">Reviews</Link>
             </li>
             <li>
               <Link onClick={linkClickHanlder}  href="/about">About Us</Link>

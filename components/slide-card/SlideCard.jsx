@@ -13,7 +13,7 @@ const SlideCard = ({ image, title, desc }) => {
         <div className="desc">
          {desc}
         </div>
-        <button className="btn-more">See More</button>
+        {/* <button className="btn-more">See More</button> */}
       </div>
     </div>
     </>

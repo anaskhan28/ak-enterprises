@@ -44,6 +44,7 @@ export const Slide = ({slides, navigation,num, customPagination, pagination, aut
         
         .swiper-button-prev {
           left: 10px;
+          margin-left: -0.8rem;
         }
         
         .swiper-button-next::before,
@@ -80,8 +81,8 @@ export const Slide = ({slides, navigation,num, customPagination, pagination, aut
         }
         .swiper-pagination{
           position: static;
-          margin-top: ${customPagination ? '2rem' : '0.1rem'}
-          
+          margin-top: ${customPagination ? '0.8rem' : '0.1rem'};
+          margin-left: ${customPagination ? '-1rem' : '0.1rem'};
           
         }
         .swiper-horizontal {

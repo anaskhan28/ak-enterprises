@@ -5,7 +5,7 @@ import { Processing } from '@/utils/Images';
 
 const Process = ({image, title, about}) => {
   return (
-  <div className="processes">
+  <div  className="processes">
     <div className="background">
       <Image
       className='img'

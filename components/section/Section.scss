@@ -102,6 +102,23 @@
           text-align: center;
           border: none;
           cursor: pointer;
+          transition: transform 0.3s ease;
+          transform-origin: center;
+
+          a{
+            color: #3a79ff;
+            text-decoration: none;
+          }
+
+          &:hover{
+            background-color: transparent;
+            border: 1px solid #ffff;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(6, 100, 232, 0.3);
+            a{
+              color: #ffff;
+            }
+          }
 
           @include breakpoint(md){
             padding: 0rem 1rem;
@@ -122,6 +139,22 @@
           text-align: center;
           border: 1px solid #ffff;
           cursor: pointer;
+          transition: transform 0.3s ease;
+          transform-origin: center;
+
+          a{
+            color: #b4bbd4;
+            text-decoration: none;
+          }
+
+          &:hover{
+            background-color: #ffff;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(6, 100, 232, 0.3);
+            a{
+              color: #3a79ff;
+            }
+          }
 
           @include breakpoint(md){
             padding: 0.4rem 1rem;

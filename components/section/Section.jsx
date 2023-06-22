@@ -2,9 +2,9 @@ import React from 'react'
 import './Section.scss';
 import { Clouds } from '@/utils/Images';
 import Image from 'next/image';
+import Link from 'next/link';
 
-
-const Section = ({title, about, desc, button1, button2}) => {
+const Section = ({title, about, desc, button1, button2, link1, link2}) => {
   return (
     <div className="interested-section">
       
@@ -21,8 +21,8 @@ const Section = ({title, about, desc, button1, button2}) => {
             </div>
 
             <div className="btn">
-                <button className="service-btn">{button1}</button>
-                <button className="connect-btn">{button2}</button>
+                <button className="service-btn"><Link href={`/${link1}`}>{button1}</Link></button>
+                <button className="connect-btn"><Link  href={`/${link2}`}>{button2}</Link></button>
               </div>
           </div>
      <Image

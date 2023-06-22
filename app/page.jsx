@@ -10,7 +10,7 @@ import { SlideCards } from "@/components/slide-cards/SlideCards";
 import ReviewCards from "@/components/review-cards/ReviewCards";
 import Processes from "@/components/processes/Processes";
 import Companies from "@/components/companies/Companies";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,7 +31,9 @@ export default function Home() {
               </div>
             </div>
             <div className="btn-learn">
-            <button className="learn">Learn More</button>
+            <button className="learn">
+              <Link  href='#learnMore'>Learn More</Link>
+              </button>
             </div>
           
           </div>
@@ -39,12 +41,12 @@ export default function Home() {
         </div>
         <div className="line"></div>
 
-        <section>
+        <section id="clients">
           <Companies />
           <div className="line"></div>
         </section>
 
-        <section className="section-2">
+        <section id="learnMore" className="section-2">
           <div className="line"></div>
           <div className="hero-2 hero">
             <div className="info-2 info">
@@ -62,8 +64,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="btn">
-                <button className="service-btn">Our Services</button>
-                <button className="connect-btn">Connect with us</button>
+                <button className="service-btn"><Link href='/services'>Our Services</Link> </button>
+                <button className="connect-btn"><Link href='#connect'>Connect with us</Link></button>
               </div>
             </div>
             <Image src={Hero2} className="hero-img hero2-img" />
@@ -88,7 +90,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="process-section">
+        <section id="process" className="process-section">
           <div className="process-heading">
             <div className="title">Process</div>
             <div className="about-title">How It Works</div>
@@ -98,15 +100,15 @@ export default function Home() {
            <Processes/>
           </div>
           <div className="process-buttons">
-            <button className="button1">About</button>
+            <button className="button1"><Link href='/about'>About</Link></button>
             <span className="line3"></span>
             <span className="or">OR</span>
             <span className="line3"></span>
-            <button className="button2">Enquiry</button>
+            <button className="button2"><Link href='/contact'>Enquiry</Link></button>
           </div>
           <Image className="cloud-img2" src={Cloud} />
         </section>
-        <section className="work-section">
+        <section id="work" className="work-section">
           <div className="work-heading">
             <div className="title">Our work</div>
             <div className="about-title">Previous work report</div>
@@ -117,11 +119,11 @@ export default function Home() {
           </div>
           </div>
         </section>
-        <section className="testimony-section">
+        <section id="review" className="testimony-section">
           <div className="heading">
             <div className="title">TESTIMONIALS</div>
-            <div className="about-title">Customer review’s</div>
-            <div className="about-desc">Our customer varies from the singular party to enterprise level.</div>
+            <div className="about-title">Clients review’s</div>
+            <div className="about-desc">Our Clients varies from the singular party to enterprise level.</div>
           </div>
           <div className="customer-container">
           <div className="rect-slide">
@@ -130,7 +132,7 @@ export default function Home() {
           </div>
           </div>
         </section>
-        <section className="interested">
+        <section id="connect" className="interested">
           <Section
            title="We buy & sell"
            about="We are interested"
@@ -139,6 +141,8 @@ export default function Home() {
             home furnitures and many more."
             button1="See More"
             button2="Let's Connect"
+            link1='services'
+            link2='contact'
            />
         </section>
       </main>

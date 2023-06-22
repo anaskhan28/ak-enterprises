@@ -6,6 +6,7 @@ const ReviewCard = ({content, image}) => {
   return (
    <div className="review-card">
     <div className="review-content">{content}</div>
+    <div className="img-circle">
     <Image
     className='img-profile'
     src={image}
@@ -13,6 +14,8 @@ const ReviewCard = ({content, image}) => {
     height={50}
     alt='profle'
     />
+    </div>
+   
    </div>
   )
 }

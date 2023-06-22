@@ -98,12 +98,21 @@
           color: #4c85ff;
           font-weight: 700;
           border-radius: 0.6rem;
+          
+          a{
+            text-decoration: none;
+            color: #4c85ff;
+          }
         }
         .learn:hover {
-          background-color: #4c85ff;
-          color: #ffff;
+          border: 1px solid #3a79ff;
+          background: #fff;
+         
           transition: 0.3s ease;
           cursor: pointer;
+          a{
+            color: #3a79ff;
+          }
         }
       }
     }
@@ -163,7 +172,7 @@
 
         .service-btn {
           background-color: #3a79ff;
-          color: #ffff;
+          
           border-radius: 0;
           margin-top: 1rem;
           padding: 0.6rem 1rem;
@@ -175,10 +184,30 @@
           border: none;
           box-shadow: 2px 3px 4px rgb(209, 209, 209);
           cursor: pointer;
+          transition: transform 0.3s ease;
+  transform-origin: center;
+
+          a{
+            color: #ffff;
+            text-decoration: none;
+          }
+
+          &:hover{
+            background: white;
+    /* color: #3a79ff; */
+    border: 1px solid #3a79ff;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(6, 100, 232, 0.3);
+            a{
+              color: #4c85ff;
+            }
+           
+            transition: 0.3s ease;
+          }
         }
         .connect-btn {
           background-color: #ffff;
-          color: #adb4d2;
+          
           border: 2px solid #adb4d2;
           box-shadow: 1rem;
           border-radius: 0;
@@ -192,7 +221,27 @@
           border: none;
           box-shadow: 1px 1px rgb(209, 209, 209);
           cursor: pointer;
+          transition: transform 0.3s ease;
+          transform-origin: center;
+        
+
+          a{
+            color: #adb4d2;
+            text-decoration: none;
+          }
+
+          &:hover{
+            background-color: #3a79ff;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(6, 100, 232, 0.3);
+            a{
+              color: #ffff;
+            }
+           
+            transition: 0.3s ease;
+          }
         }
+
       }
     }
     @include breakpoint(md) {
@@ -366,9 +415,19 @@
         padding: 0.6rem 0.8rem;
         background-color: #ffd7d7;
         border: none;
-        color: red;
         font-weight: 700;
         cursor: pointer;
+
+        a{
+          color: red;
+          text-decoration: none;
+        }
+
+        &:hover{
+          background-color: #ffff;
+          border: 1px solid red;
+          
+        }
       }
 
       .line3 {
@@ -384,9 +443,20 @@
         padding: 0.6rem 0.8rem;
         background-color: #d2e1ff;
         border: none;
-        color: #3a79ff;
+       
         font-weight: 700;
         cursor: pointer;
+
+        a{
+          color: #3a79ff;
+          text-decoration: none;
+        }
+
+        &:hover{
+          background-color: #ffff;
+          border: 1px solid #3a79ff;
+          
+        }
       }
     }
 
