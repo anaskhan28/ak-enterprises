@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Section = ({title, about, desc, button1, button2, link1, link2}) => {
   return (
-    <div className="interested-section">
+    <div data-aos="fade-up" className="interested-section">
       
       <div className="cloud">
      <Image
