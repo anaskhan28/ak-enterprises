@@ -23,9 +23,10 @@
   }
 
   .slide-img {
+    object-fit: cover;
     @include breakpoint(md) {
       max-width: 221px;
-      height: auto;
+      height: 160px;
       margin-left: 1rem;
     }
   }

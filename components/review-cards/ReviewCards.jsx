@@ -9,7 +9,7 @@ const ReviewCards = () => {
     return obj;
   }, {});
  
-  console.log(imagesObject, 'image object')
+  
 const slides = [
     <ReviewCard
     content="Excellent service provided by the company! They efficiently handled the transportation and shifting of our office 

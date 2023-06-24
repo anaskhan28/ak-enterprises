@@ -22,8 +22,9 @@
         padding: 0rem 1rem;
 
         .logo{
-            width: 4rem;
-            height: auto;
+          max-width: 100px;
+            width: 20%;
+            height: 13%;
         }
 
         .links {
@@ -71,14 +72,15 @@
             margin-bottom: 0.5rem;
           }
 
-          li {
+          li a {
             list-style: none;
             color: #ADB4D2;
             font-size: 0.9rem;
             cursor: pointer;
+            text-decoration: none;
         }
 
-          li:hover{
+           a:hover{
             color: #567AFF;
             transition: 0.4s ease;
          }
