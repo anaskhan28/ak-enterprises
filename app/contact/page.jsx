@@ -1,12 +1,38 @@
+'use client'
 import HeaderSection from '@/components/header-section/HeaderSection'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Map from '../../public/images/map.svg';
 import Call from '../../public/images/call.svg';
 import Gmail from '../../public/images/gmail.svg';
 import './contact.scss';
+import { useForm, ValidationError } from '@formspree/react';
+import Swal from 'sweetalert2'
+// import withReactContent from 'sweetalert2-react-content'
+
+// const MySwal = withReactContent(Swal)
+
 
 const contact = () => {
+  
+  const [state, handleSubmit] = useForm("meqbjokv");
+  
+  if (state.succeeded) {
+    
+     Swal.fire({
+      icon: 'success',
+  title:  "We'll contact you soon 🎉",
+  showConfirmButton: false,
+
+    })
+    window.history.back()
+    
+    
+}
+
+
+  
+
   return (
   <section  className="contact-container">
     <HeaderSection subtitle='You have something' about='Contact Us'/>
@@ -17,14 +43,47 @@ const contact = () => {
       <div  className="contact-content">
         <div className="contact-form">
           <h1>Let's Talk</h1>
-          <form  className='form' action="">
-            <input type='text' placeholder='Your Name'/>
-            <input  type='text' placeholder='Your Email'/>
-            <textarea placeholder='Your Message'>
+          <form
+          onSubmit={handleSubmit}
+            className='form'>
+            <input 
+            required 
+            type='text' 
+            name='name' 
+            
+           
+            placeholder='Your Name'/>
 
+            <input required 
+            type='email' name='email' 
+            placeholder='Your Email'/>
 
+              <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+
+            <input required 
+            type='text' name='subject' 
+           
+            placeholder='Your Subject'/>
+
+            <textarea 
+            required 
+            type='text' name='message' 
+            
+            placeholder='Your Message'>
             </textarea>
-            <button>Send</button>
+            <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+            <button
+            type='submit'
+            disabled={state.submitting}
+            >Send</button>
           </form>
         </div>
         <div data-aos="fade-up" className="contact-connect">
