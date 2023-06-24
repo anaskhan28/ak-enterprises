@@ -1,10 +1,13 @@
 'use client'
 import Head from 'next/head';
+import { React, useEffect } from 'react'
 import './globals.scss';
 import { Open_Sans } from 'next/font/google';
 import Image from 'next/image';
 import Nav from '@/components/nav/nav';
 import Footer from '@/components/footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const OpenSans = Open_Sans({ subsets: ['latin'], weight: ['300', '500'] });
 
@@ -15,6 +18,13 @@ const OpenSans = Open_Sans({ subsets: ['latin'], weight: ['300', '500'] });
 // };
 
 export default function RootLayout({ children }) {
+
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
   return (
     <>
 

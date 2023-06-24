@@ -8,18 +8,18 @@ import './contact.scss';
 
 const contact = () => {
   return (
-  <section className="contact-container">
+  <section  className="contact-container">
     <HeaderSection subtitle='You have something' about='Contact Us'/>
-    <div className="contact-section">
+    <div  className="contact-section">
       <div className="title">Get In Touch</div>
       <div className="line"></div>
 
-      <div className="contact-content">
+      <div  className="contact-content">
         <div className="contact-form">
           <h1>Let's Talk</h1>
-          <form className='form' action="">
+          <form  className='form' action="">
             <input type='text' placeholder='Your Name'/>
-            <input type='text' placeholder='Your Email'/>
+            <input  type='text' placeholder='Your Email'/>
             <textarea placeholder='Your Message'>
 
 
@@ -27,7 +27,7 @@ const contact = () => {
             <button>Send</button>
           </form>
         </div>
-        <div className="contact-connect">
+        <div data-aos="fade-up" className="contact-connect">
           <div className="contact">
           <Image className='img' src={Map}/>
           <p className="contact-address">Shop No: 35 Star Market Phase 2 opp New Ekta 

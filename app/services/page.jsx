@@ -5,7 +5,7 @@ import HeaderSection from '@/components/header-section/HeaderSection';
 
 const services = () => {
   return (
-    <section className="service-section">
+    <section  className="service-section">
      <HeaderSection subtitle='we buy & sell' about="All Services"/>
 
       <div className="service-cards">

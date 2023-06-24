@@ -15,8 +15,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="container">
-        <div className="hero">
+      <main  className="container">
+        <div   className="hero">
           <div className="info">
             <div className="welcome">Welcome To</div>
             <div className="name">
@@ -41,12 +41,12 @@ export default function Home() {
         </div>
         <div className="line"></div>
 
-        <section id="clients">
+        <section data-aos="fade-up" id="clients">
           <Companies />
           <div className="line"></div>
         </section>
 
-        <section id="learnMore" className="section-2">
+        <section data-aos="fade-up" id="learnMore" className="section-2">
           <div className="line"></div>
           <div className="hero-2 hero">
             <div className="info-2 info">
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section-feat">
+        <section data-aos="fade-up" className="section-feat">
           <div className="work">
             <Image className="work-img" src={Work} alt="work" />
             <div className="num">100%</div>
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="process" className="process-section">
+        <section data-aos="fade-up" id="process" className="process-section">
           <div className="process-heading">
             <div className="title">Process</div>
             <div className="about-title">How It Works</div>
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
           <Image className="cloud-img2" src={Cloud} />
         </section>
-        <section id="work" className="work-section">
+        <section data-aos="fade-up" id="work" className="work-section">
           <div className="work-heading">
             <div className="title">Our work</div>
             <div className="about-title">Previous work report</div>
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
           </div>
         </section>
-        <section id="review" className="testimony-section">
+        <section data-aos="fade-up" id="review" className="testimony-section">
           <div className="heading">
             <div className="title">TESTIMONIALS</div>
             <div className="about-title">Clients review’s</div>
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
           </div>
         </section>
-        <section id="connect" className="interested">
+        <section data-aos="fade-up" id="connect" className="interested">
           <Section
            title="We buy & sell"
            about="We are interested"
