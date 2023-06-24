@@ -16,22 +16,44 @@ import Swal from 'sweetalert2'
 const contact = () => {
   
   const [state, handleSubmit] = useForm("meqbjokv");
+//   const [isLoading, setIsLoading] = useState(false);
+
+//   const handleMesage = () =>{
+//     setTimeout(()=>{
+//       setIsLoading(true)
+//     }, 1000)
+//     setIsLoading(false)
+//   if (state.succeeded) {
+//      Swal.fire({
+//       icon: 'success',
+//       titleText:  "Consider it done 🎉",
+//   showConfirmButton: false,
+
+//     })
+//     window.history.back()
+
+    
+    
+    
+// }
+
+
+//   }
+
+     if (state.succeeded) {
+       Swal.fire({
+        icon: 'success',
+        titleText:  "Consider it done 🎉",
+    showConfirmButton: false,
   
-  if (state.succeeded) {
-    
-     Swal.fire({
-      icon: 'success',
-  title:  "We'll contact you soon 🎉",
-  showConfirmButton: false,
-
-    })
-    window.history.back()
-    
-    
-}
-
-
+      })
+      window.history.back()
   
+      
+      
+      
+  }
+
 
   return (
   <section  className="contact-container">
@@ -80,10 +102,30 @@ const contact = () => {
         field="message"
         errors={state.errors}
       />
-            <button
+                {/* {
+                isLoading ? <Rings
+              height="50"
+              width="50"
+              color="#567AFF"
+              radius="6"
+              wrapperStyle={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel="rings-loading"
+            />: <button
+            onClick={handleMesage}
             type='submit'
             disabled={state.submitting}
-            >Send</button>
+            >
+              Send
+         </button>} */}
+         <button
+            type='submit'
+            disabled={state.submitting}
+            >
+              Send
+         </button>
+            
           </form>
         </div>
         <div data-aos="fade-up" className="contact-connect">
