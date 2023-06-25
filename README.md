@@ -5,7 +5,7 @@
 ## About AK Enterprises
 AK Enterprises is a well-established business that offers a wide range of services and products. Our team of experts is dedicated to providing high-quality solutions to meet the needs of our customers. With a strong focus on customer satisfaction, we strive to deliver exceptional results in every aspect of our business.
 
-![image](https://github.com/anaskhan28/ak-enterprises/assets/87796038/f6c9c9ce-cea2-4c5b-82ef-fec0b0b67cd6)
+![image](https://raw.githubusercontent.com/anaskhan28/ak-enterprises/main/preview.png)
 
 ## Website Features
 <h3>The AK Enterprises website is designed to showcase our services, products, and achievements. Here are some key features of the website:
