@@ -21,13 +21,12 @@ export default function Home() {
             <div className="welcome">Welcome To</div>
             <div className="name">
               <span>AK </span>
-              Enterprises Solution
+              Enterprise Group
             </div>
             <div className="text-info">
               <div className="text">
-                We are a trusted dealer of scrap materials, electronic scraps,
-                wooden scraps, furniture, and provide efficient shifting and
-                demolition services.
+              We help banks maintain secure locker operations, compliant scrap disposal, and smooth branch shifting
+               with trust and confidentiality.
               </div>
             </div>
             <div className="btn-learn">
@@ -51,21 +50,17 @@ export default function Home() {
           <div className="hero-2 hero">
             <div className="info-2 info">
               <div className="welcome intro ">
-                We are one of the leading compnay in
-              </div>
-              <div className="name work">Scrap & Shifting</div>
+              Trusted Partner for Banks</div>
+              <div className="name work">Shifting & Disposal</div>
               <div className="text-info">
                 <div className="text text1">
-                  AK Enterprises is an established family run business in the
-                  heart of Mumbai City dealing in all types of scrap metals. We
-                  have strong commercial traders in India enabling us to pay the
-                  best price possible. This means that we pay higher than our
-                  competitors 99% of the time.
+                AK Enterprise Group is a trusted partner for bank locker AMC, vault door servicing, branch shifting, and confidential scrap disposal.
+                We ensure operational continuity, compliance safety, and complete confidentiality inside every branch we serve.
                 </div>
               </div>
               <div className="btn">
                 <button className="service-btn"><Link href='/services'>Our Services</Link> </button>
-                <button className="connect-btn"><Link href='#connect'>Connect with us</Link></button>
+                <button className="connect-btn"><Link href='/contact'>Request Branch Visit</Link></button>
               </div>
             </div>
             <Image src={Hero2} className="hero-img hero2-img" />
@@ -77,15 +72,14 @@ export default function Home() {
             <Image className="work-img" src={Work} alt="work" />
             <div className="num">100%</div>
             <div className="work-about">
-              Satisfactory work followed by rules and regulations
-            </div>
+            Strict safety, confidentiality & compliance with bank protocols.            </div>
           </div>
           <div className="clients">
             <Image className="client-img" src={Clients} alt="clients" />
 
-            <div className="num">10000+</div>
+            <div className="num">100+</div>
             <div className="client">
-              Total clients we have provided our services
+            Locker AMC, vault servicing, scrap disposal & shifting projects.
             </div>
           </div>
         </section>
@@ -134,11 +128,10 @@ export default function Home() {
         </section>
         <section data-aos="fade-up" id="connect" className="interested">
           <Section
-           title="We buy & sell"
-           about="We are interested"
-           desc="Items include all types of metals like aluminium, copper, steel, brass and many more. We also deal 
-           with old furniture items which inlcude, office furnitures, tables, chairs,
-            home furnitures and many more."
+           title="WE WORK WITH BANKS"
+           about="Secure Branch Operations"
+           desc="We handle locker shifting, vault servicing, and confidential disposal
+ensuring safe and smooth branch operations with zero disruption."
             button1="See More"
             button2="Let's Connect"
             link1='services'

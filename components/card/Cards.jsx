@@ -1,102 +1,71 @@
 import React from "react";
-import { Content } from "@/utils/CardContent";
 import { ServiceImages } from "../../utils/Images";
 import Card from "./Card";
+
 const Cards = () => {
   return (
     <>
-      {/* {
-      Content.map((content, index) => (
-        <Card
-        key={index}
-         image={content.img}
-         title={content.title}
-         subtitle={content.subtitle}
-         desc={content.des}
-        
-        />
-        
-
-       
-      ))
-    } */}
+      <Card
+        img={ServiceImages.Lockers}
+        title="Locker AMC & Relocation"
+        subtitle="Secure Handling"
+        des="Secure shifting, alignment, and maintenance of bank lockers with strict safety protocols and zero disruption."
+      />
 
       <Card
-       
-       img= { ServiceImages.Furniture}
-       title = 'Furniture'
-       subtitle = 'Old & New'
-       des ='We buy your Office Furnitures and pay you highest 
-       price for your Office Furnitures, We also sell Office 
-       Furnitures at lowest price in the scrap market.'
+        img={ServiceImages.Bank}
+        title="Vault Door Servicing"
+        subtitle="Strong Room Support"
+        des="Professional servicing of vault & strong room doors to ensure smooth operations and compliance-readiness."
       />
+
       <Card
-       aos="fade-up"
-       img= { ServiceImages.Bank}
-       title = 'Bank Work'
-       subtitle = 'All Scrap'
-       des ='We undertake all the scrap available in the bank 
-       and offer a best price. We also help the bank to shift
-        from one place to another. The work always done 
-        in the given time.'
+        img={ServiceImages.Shifting}
+        title="Branch Shifting"
+        subtitle="End-to-End Execution"
+        des="Complete shifting of lockers, furniture, and equipment with safe transport and fast completion."
       />
+
       <Card
-        aos="fade-up"
-       img= { ServiceImages.Computer}
-       title = 'Computer'
-       subtitle = 'Old & New'
-       des ='We buy old & new computers scrap and offer you the best 
-       price than our competitor. We also sell working computers at a 
-       best price.'
+        img={ServiceImages.Furniture}
+        title="Space Optimization"
+        subtitle="Clean & Efficient"
+        des="Reorganization, dismantling, and setup of banking spaces for better operational efficiency."
       />
+
       <Card
-        aos="fade-up"
-       img= { ServiceImages.Machines}
-       title = 'Old Machinery'
-       subtitle = 'Buy & Sell'
-       des ='We buy your Old Machinery and pay you highest price for your Old Machinery,
-       We also sell Old Machinery at lowest price in the scrap market. '
+        img={ServiceImages.Ac}
+        title="Confidential Disposal"
+        subtitle="RBI-Compliant"
+        des="Secure disposal of scrap & confidential items with proper documentation for audit compliance."
       />
+
       <Card
-        aos="fade-up"
-       img= { ServiceImages.Ac}
-       title = 'Air Condition'
-       subtitle = 'Buy & Sell'
-       des ='We buy your Old Air Condition and pay you highest price for your Old Air Condition, We also sell Old Air
-       Condition at lowest price in the scrap market.'
+        img={ServiceImages.Machines}
+        title="Equipment Removal"
+        subtitle="Safe Disposal"
+        des="Removal & compliant disposal of old machinery, strong room assets, and obsolete equipment."
       />
+
       <Card
-        aos="fade-up"
-       img= { ServiceImages.Shifting}
-       title = 'Shifting'
-       subtitle = 'Any work'
-       des ='We offer a Shifting service with our skilled labours and best transportation. 
-       We complete the shifting with in given time and also work carefully along with client thoughts.'
+        img={ServiceImages.BankWork}
+        title="Branch Revamp Support"
+        subtitle="Selective Dismantling"
+        des="Careful dismantling & interior removal during branch upgrades without impacting daily operations."
       />
+
       <Card
-        aos="fade-up"
-       img= { ServiceImages.Demolish}
-       title = 'Demolition'
-       subtitle = 'Proper Care'
-       des ='We buy your Demolishing Work and pay you highest price for your Demolishing Work,
-       We also sell Demolishing Work at lowest price in the scrap market.'
+        img={ServiceImages.Metals}
+        title="Scrap Collection"
+        subtitle="Audit-Ready"
+        des="Secure removal of metal & asset scrap with proper records, reports, and transparent process."
       />
+
       <Card
-        aos="fade-up"
-       img= { ServiceImages.Metals}
-       title = 'All Metals'
-       subtitle = 'Buy & Sell'
-       des ='We buy your all Metals Scrap and pay you highest 
-       price include copper, iron, steel, aluminium. We also sell metal Scrap 
-       at lowest price in the scrap market.'
-      />
-      <Card
-        aos="fade-up"
-       img= { ServiceImages.Lockers}
-       title = 'Locker Safe'
-       subtitle = 'Old & New'
-       des ='We buy old lockers and strong room door
-       and offer the best price possible. We also sell the lockers, and safe in a low price.'
+        img={ServiceImages.Computer}
+        title="E-Waste Compliance"
+        subtitle="Secure Handling"
+        des="Responsible disposal of electronic items with certification and recycling compliance."
       />
     </>
   );

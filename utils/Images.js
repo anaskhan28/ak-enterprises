@@ -2,15 +2,10 @@ import BOI from '../public/images/comapnies/boi.png'
 import Baroda from '../public/images/comapnies/baroda.png'
 import Canara from '../public/images/comapnies/canara.png';
 import Central from '../public/images/comapnies/central.png';
-import Hdfc from '../public/images/comapnies/HDFC.svg';
 import Saraswati from '../public/images/comapnies/saraswati.png';
 import Ubi from '../public/images/comapnies/ubi.png';
-import Wipro from '../public/images/comapnies/wipro.png'
 import Sbi from '../public/images/comapnies/stateBank.png'
-import Axis from '../public/images/comapnies/axis.png';
-import DenaBank from '../public/images/comapnies/denaBank.png';
-import Tata from '../public/images/comapnies/tata.png';
-import Abhiyauday from '../public/images/comapnies/abhiyuday.png';
+
 
 import Enquiry from '../public/images/enquiry.png';
 import User from '../public/images/user.png';
@@ -23,6 +18,7 @@ import Bank from '../public/images/work/bank.png';
 import Computer from '../public/images/work/computer.png';
 import Demolish from '../public/images/work/demolish.png';
 import Furniture from '../public/images/work/furniture.png';
+import BankWork from '../public/images/work/union-work.jpg';
 import Lockers from '../public/images/work/lockers.png';
 import Machines from '../public/images/work/machines.png';
 import Metals from '../public/images/work/metals.png';
@@ -35,14 +31,8 @@ export const CompaniesImages = [
     Ubi,
     Canara,
     Central,
-    Axis,
     Sbi,
-    Hdfc,
     Saraswati,
-    DenaBank,
-    Tata,
-    Abhiyauday,
-    Wipro,
 ]
 
 export const Processing = {
@@ -66,6 +56,7 @@ export const ServiceImages = {
     Lockers,
     Machines,
     Metals,
-    Shifting
+    Shifting,
+    BankWork,
 
 }

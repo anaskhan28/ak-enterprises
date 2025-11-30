@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="line"></div>
-      <div className="right">© 2023 AK Enterprises. All Rights Reserved.</div>
+      <div className="right">© 2025 AK Enterprise Group. All Rights Reserved.</div>
     </footer>
   );
 };

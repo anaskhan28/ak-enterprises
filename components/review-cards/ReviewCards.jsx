@@ -11,32 +11,21 @@ const ReviewCards = () => {
  
   
 const slides = [
-    <ReviewCard
-    content="Excellent service provided by the company! They efficiently handled the transportation and shifting of our office 
-    equipment during our branch relocation. Their team ensured that all items were securely packed and safely transported.
-     Highly recommended! - Bank Of  India"
+<ReviewCard
+content="The locker shifting and vault servicing were handled very securely with zero disruption to customers. Excellent coordination during the entire operation. Appreciated by our branch team."
+image={imagesObject.image2.src}
+/>,
+<ReviewCard
+content="Professional and compliant disposal of confidential materials. Complete documentation was provided for audit records. Their secure handling practices are highly reliable."
+image={imagesObject.image3.src}
+/>,
+<ReviewCard
+content="Their team managed disposal requirements very efficiently with proper compliance reports. Safe removal ensured cleanliness and better utilization of branch space."
+image={imagesObject.image5.src}
+/>,
 
 
-    image={imagesObject.image1.src}
-    />,
-    <ReviewCard
-    content="We are extremely satisfied with the demolition work carried out by this company. They executed the project with precision 
-    and professionalism. Their expertise in demolishing structures while adhering to safety standards is commendable. 
-    Bank of Baroda appreciates their diligent efforts."
-    image={imagesObject.image2.src}
-    />,
-    <ReviewCard
-    content="Union Bank of India extends its appreciation to this company for their exceptional services in e-waste management. 
-    They efficiently handled the disposal and recycling of our electronic devices, ensuring compliance with 
-    environmental regulations. Their commitment to sustainable practices is truly commendable."
-    image={imagesObject.image3.src}
-    />,
-    <ReviewCard
-    content="We would like to thank the company for their efficient scrap work. Their team effectively managed the collection and processing of metal 
-    scrap from our premises. Their professionalism and commitment to responsible recycling have made a positive impact on our 
-    environmental sustainability efforts."
-    image={imagesObject.image11.src}
-    />
+
 ]
   return (
     <div>

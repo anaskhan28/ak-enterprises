@@ -8,21 +8,18 @@ const Processes = () => {
     <>
          <Process
               image={Processing.Enquiry}
-              title="Enquiry"
-              about="Our Customers/Clients 
-             give us a call or they send us a enquiry."
-            />
-            <Process
-              image={Processing.User}
-              title="Visit"
-              about="We visit to our Customer/client 
-             location and we finalize the deal on the spot."
+              title="Survey"
+              about="Branch assessment of lockers, vault & scrap disposal planned with zero disruption."
             />
             <Process
               image={Processing.Truck}
-              title="Pay & Pickup"
-              about="Once the deal is done we will pay the amount 
-             and pickup the scrap."
+              title="Secure Execution"
+              about="Shifting, repairs & disposal done with strict safety protocols."
+            />
+            <Process
+              image={Processing.User}
+              title="Audit Reports"
+              about="Before/after proof & disposal certificates for RBI compliance."
             />
     </>
   )
